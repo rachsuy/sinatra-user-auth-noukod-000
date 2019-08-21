@@ -1,14 +1,9 @@
-
-<!DOCTYPE html>
-<html><head><title></title></head><body>
 <h1>Log In Below:</h1>
-<form>
-  <label>Email:</label>
-  <input type="text" name="" autocomplete="off" placeholder="name" id=""/>
-  <label>Password:</label>
-  <input type="password" name="" autocomplete="off" placeholder="name" id=""/>
-  <label>Name:</label>
-  <input type="submit"/>
-</form>
-</body></html>
+<form method="POST" action='/sessions'>
+  <label for "email">Email:</label>
+  <input type="text" id="email" name="email"> <br />
 
+  <label for "password">Password:</label>
+  <input type="text" id="password" name="password"><br />
+  <input type="submit" id="submit" value="Log In">
+</form>
