@@ -1,20 +1,20 @@
-# A sample Gemfile
-source "https://rubygems.org"
+source 'http://rubygems.org'
+
+gem 'activerecord', :require => 'active_record'
+gem 'sinatra-activerecord', :require => 'sinatra/activerecord'
 
 gem 'sinatra'
-gem 'activerecord', '4.2', :require => 'active_record'
-gem 'sinatra-activerecord'
+gem 'pry-nav'
 gem 'rake'
+gem 'rspec'
+gem 'rack-test'
+gem 'database_cleaner', git: 'https://github.com/bmabey/database_cleaner.git'
 gem 'require_all'
-gem 'sqlite3'
-gem 'thin'
-gem 'shotgun'
-gem 'pry'
 
-group :test do
-  gem 'launchy'
-  gem 'rspec'
-  gem 'capybara'
-  gem 'rack-test'
-  gem 'database_cleaner', git: 'https://github.com/bmabey/database_cleaner.git'
+
+group :development do
+  gem "capybara"
+  gem "pry"
+  gem "sqlite3"
+  gem "shotgun"
 end
